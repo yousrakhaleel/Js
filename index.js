@@ -69,7 +69,6 @@ var item=
 			]
 	}
 ]
-
 function topping(){
     for(let l=0;l<item.length;l++){
         var topping= item[l].topping;
@@ -78,6 +77,7 @@ function topping(){
         }
     }
 }
+
 function batter(){
     for(let l=0;l<item.length;l++){
         var topping= item[l].batters;
@@ -93,4 +93,12 @@ function sum(){
         sum= sum+ppu;
     }
    console.log(sum);
+}
+function average(){
+    for(let l=0;l<item.length;l++){
+        var ppu= item[l].ppu;
+        sum= sum+ppu;
+    }
+    let ave=sum/item.length;
+   console.log(ave);
 }
